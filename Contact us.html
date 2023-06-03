@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Form</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet" />
+
+    <script src="https://kit.fontawesome.com/c8e4d183c2.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+
+
+    <style>
+        html{
+    scroll-behavior: smooth;
+  }
+  ::selection{
+    background: rgb(46, 163, 109);
+    color: white;
+  }
+  /* grid to center the form */
+body{
+    width: 100%;
+    min-height: 100vh;
+    display: grid;
+    align-items: center;
+}
+/* img{
+    width: 160px;
+    height: 150px;
+    border-radius: 50%;
+    position: fixed;
+    top:30%;
+    left: 10%;
+} */
+.form{
+    width: 100%;
+    height: 400px;
+    background: #002333;
+}
+h1{
+    color:white;
+    text-align: center;
+    margin-top: 20px;
+}
+/* Css grid */
+.grid{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+/* flexbox */
+.inputs{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;  
+}
+input[type="text"]{
+    background: none;
+    border-radius: 18px;
+    width: 230px;
+    height: 39px;
+    color: white;
+    outline: none;
+    border: 2px solid white;
+    text-align: center;
+    transition: .4s ease;
+}
+input[type="email"]{
+    background: none;
+    border-radius: 18px;
+    width: 230px;
+    height: 39px;
+    color: white;
+    outline: none;
+    border: 2px solid white;
+    text-align: center;
+    transition: .4s ease;
+}
+input:focus{
+    border: 3px solid rgb(46, 163, 109);
+    width: 260px;
+}
+select{
+    border-radius: 10px;
+    cursor: pointer;
+    background: rgb(46, 163, 109);
+    width: 150px;
+    text-align: center;
+}
+option{
+    background: rgb(46, 163, 109);
+    border-radius: 5px;
+    cursor: pointer;
+}
+h4{
+    color: white;
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+button{
+    padding: 13px 35px;
+    color:white;
+    background: rgb(46, 163, 109) ;
+    cursor: pointer;
+    border-radius: 10px;
+    font-size: 15px;
+    border: none;
+    outline: none;
+    margin-left: 20%;
+    transition: .3s linear;
+}
+button:hover{
+    background: transparent;
+    border: 2px solid rgb(46, 163, 109) ; ;
+}
+
+/* media queries for the responsiveness in small screens */
+@media (max-width:900px){
+    .form{
+        height: 500px;
+    }
+    .grid{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .inputs{
+        flex-direction: column;
+        width: 100%;
+        justify-content: center;
+    }
+    .input{
+        position: relative;
+        left: 5%;
+    }
+    select{
+        position: relative;
+        left: 5%;
+    }
+    h4{
+        margin-left: 5%;
+    }
+    img{
+        display: none;
+    }
+    
+}
+@media (max-width:500px){
+    .form{
+        height: 710px;
+    }
+    .grid{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    input{
+        position: relative;
+        left: 5%;
+    }
+    select{
+        position: relative;
+        left: 5%;
+    }
+    h4{
+        margin-left: 5%;
+        
+    }
+    img{
+        display: none;
+    }
+}
+    </style>
+
+
+    <header>
+        <a href="#" class="logo" ><img src="images/medicine.png" alt="nature"></a>
+        <input type="checkbox" id="menu-bar">
+        <label for="menu-bar">Menu</label>
+        <nav class="navbar">
+            <ul>
+                <li><a href="index.html">home</a></li>
+                <li><a href="departments.html">Departments</a></li>
+                <li><a href="Support.html">Support</a>
+                    <ul>
+                        <li><a href="#">Contact us</a></li>
+                        <li><a href="#">services+</a>
+                        
+                    </li>
+                </ul>
+            </li>
+                    <li><a href="Aboutus.html">About us</a></li>
+               
+                <li><a href="Contact us.html">contact us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+      
+        <div class="map" style="display: flex; align-items: center; justify-content: center; padding-top: 181px;">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3975.7269714000477!2d6.976953613802564!3d4.816873696502095!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1069cf46abda1f6d%3A0x12e7b523745eb22e!2sHub10!5e0!3m2!1sen!2sng!4v1601145463417!5m2!1sen!2sng"
+                width="600" height="450" frameborder="0" style="border: 0" allowfullscreen="" aria-hidden="false"
+                tabindex="0"></iframe>
+        </div>
+
+
+        <!-- put an images inside the contact us form !-->
+
+
+  <!--main div-->
+   <div class="form">
+     <h1>Contact us</h1>
+     <!--Grid system-->
+      <div class="grid">
+
+     <div class="inputs">
+             <h4>Name : </h4>
+         <input type="text" placeholder="Your name">
+             <h4>Email :</h4>
+         <input type="email" placeholder="Your email">
+         <h4>select :</h4>
+         <select name="Gender" id="gender">
+           <option value="gender">Dr.Rajesh Singhvi</option>
+           <option value="gender">Dr.Nalini Goyal</option>
+         </select>
+     </div>
+           <!--message area-->
+     <div class="message">
+       <h3 style="color: aliceblue; margin-left: 5%;">Message :</h3>
+       <textarea style="border-radius: 5px;margin-bottom: 20px; margin-left:3%;" name="text" id="" cols="40" rows="7">
+       </textarea>
+       <!-- send button-->
+       <button>Send</button>
+     </div>
+
+    </div>
+
+   </div>
+ 
+
+<hr>
+ 
+
+<footer class="footer">
+    <div class="container-foot">
+        <div class="rowf">
+            <div class="footer-col">
+                <h4 class="compony"> Services<br><hr></h4>
+                <ul>
+                    <li><a href="#">What we Offer</a></li>
+                    <li><a href="#">our services</a></li>
+                    <li><a href="#">privacy policy</a></li>
+                    <li><a href="#">Conditions</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Patients and Visitors<br><hr></h4>
+                <ul>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">Find A Doctor</a></li>
+                    <li><a href="#">Make an Appointment</a></li>
+                    <li><a href="#">Testimonials</a></li>
+                    <li><a href="#">More</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>About us <br><hr></h4>
+                <ul>
+                    <li><a href="#">Our Chairperson</a></li>
+                    <li><a href="#">Team list</a></li>
+                    <li><a href="#">Carrier</a></li>
+                    <li><a href="#">Doctors</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>follow us <br><hr></h4>
+                <div class="social-links">
+                    <a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="https://www.instagram.com/?hl=en"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+  </footer>
+</body>
+
+
+</html>

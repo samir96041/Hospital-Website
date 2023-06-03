@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SamLab</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    
+</head>
+<body>
+    
+
+      <style>
+       
+        .newcon h1{
+        color: rgb(7, 192, 217)
+        ;
+
+        }
+        .newcon h4{
+            color: rgb(7, 192, 217);
+        }
+        .con2 h1{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .con2 h4{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding-top: 100px;
+        }
+        .con2 p{
+         width: 
+         600px;
+
+            margin: auto;
+        }
+ 
+      </style>
+    <header>
+        <a href="#" class="logo" ><img src="images/medicine.png" alt="nature"></a>
+        <input type="checkbox" id="menu-bar">
+        <label for="menu-bar">Menu</label>
+        <nav class="navbar">
+          <ul>
+              <li><a href="index.html">home</a></li>
+              <li><a href="departments.html">Departments</a></li>
+              <li><a href="Support.html">Support</a>
+                  <ul>
+                      <li><a href="#">Contact us</a></li>
+                      <li><a href="#">services+</a>
+                      
+                  </li>
+              </ul>
+          </li>
+                  <li><a href="Aboutus.html">About us</a></li>
+             
+              <li><a href="Contact us.html">contact us</a></li>
+          </ul>
+      </nav>
+    </header> 
+
+    <div class="newcon">
+     <img src="images/Support.webp"  style="height: 500px;" alt="">
+     <div class="con2">
+        <h1>Patient support services </h1>
+        <p>We know your wellbeing depends not only on medical care, but the help and support you receive throughout your treatment. We have dedicated staff to support you and links with patient groups who can also help.</p>
+        <hr>
+        <h4>Support in difficult circumstances: PALS</h4>
+        <p>Our Patient Advice and Liaison Service is here to provide support, assistance and advice to patients, families and carers. They can help you if you are having difficulties, need translation services or want to complain about your treatment.</p>
+        <h4>Patient and family experience and involvement</h4>
+        <p>The patient experience and involvement team supports staff to improve services, and provide opportunities and information for patients and their families wanting to get involved. </p>
+        <h4>Support from independent groups</h4>
+        <p>Sometimes our patients need help and advice from people who have already experienced what they are going through.  We have strong links with independent support groups that can offer you help beyond your medical treatment.</p>
+        <h4>Free guest WiFi service</h4>
+        <p>We offer a free guest WiFi service for use by our patients and their families and carers.</p>
+        <h4>Reimbursement of travel expenses</h4>
+        <p>The cost of travel to attend hospital can be reimbursed if a patient receives one or more eligible benefits. Please download our guide below to check your eligibilty and for information on how to request reimbursement.
+
+            Getting help with travel costs when coming to hospital (PDF, 322KB)
+            Travel expense reimbursement for Universal Credit patients (PDF, 90KB)</p>
+
+            <h4>Visitor accommodation</h4>
+            <p>We have some accommodation available to relatives or visitors close to both hospitals. The demand for our visitor accommodation is high, so we ask that you make a reservation through the accommodation office. For more information, see our visitor accommodation pages for Royal Brompton and Harefield Hospital.</p>
+     </div>  
+    </div>
+    <footer class="footer">
+        <div class="container-foot">
+            <div class="rowf">
+                <div class="footer-col">
+                    <h4 class="compony"> Services<br><hr></h4>
+                    <ul>
+                        <li><a href="#">What we Offer</a></li>
+                        <li><a href="#">our services</a></li>
+                        <li><a href="#">privacy policy</a></li>
+                        <li><a href="#">Conditions</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Patients and Visitors<br><hr></h4>
+                    <ul>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Find A Doctor</a></li>
+                        <li><a href="#">Make an Appointment</a></li>
+                        <li><a href="#">Testimonials</a></li>
+                        <li><a href="#">More</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>About us <br><hr></h4>
+                    <ul>
+                        <li><a href="#">Our Chairperson</a></li>
+                        <li><a href="#">Team list</a></li>
+                        <li><a href="#">Carrier</a></li>
+                        <li><a href="#">Doctors</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>follow us <br><hr></h4>
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.instagram.com/?hl=en"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+      </footer>
+    </body>
+<script>
+    hamburger = document.querySelector(".hamburger");
+    nav = document.querySelector("nav");
+    hamburger.onclick = function() {
+        nav.classList.toggle("active");
+    }
+</script>
+
+</html>

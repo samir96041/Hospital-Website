@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SamLab</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
+</head>
+<body>
+
+  <style>
+    /*-----------------------------------*\
+      #ABOUT
+    \*-----------------------------------*/
+    
+    
+    .about-content{
+      position: absolute ;
+      top: 403px;
+    } 
+    .about .container {
+      display: grid;
+      gap: 20px;
+    }
+    
+    .about .section-text { margin-block: 20px 35px; }
+    
+    .tab-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px 15px;
+    }
+    
+    .tab-btn {
+      background-color: var(--alice-blue);
+      color: var(--midnight-green);
+      padding: 7px 30px;
+      border-radius: var(--radius-6);
+      font-weight: var(--fw-700);
+    }
+    
+    .tab-btn.active {
+      background-color: var(--verdigris);
+      color: var(--white);
+    }
+    
+    .tab-text {
+      color: var(--midnight-green);
+      margin-block: 35px;
+    }
+    
+    .about-item {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-block-end: 10px;
+    }
+    
+    .about-item ion-icon {
+      color: var(--verdigris);
+      font-size: 2rem;
+      flex-shrink: 0;
+    }
+    .about-banner{
+        height: 00px;
+        width: 300px;
+    
+    }
+    .banner{
+       display: grid;
+    justify-content: end;
+    }
+  
+    .Doctors{
+        display: flex;
+       padding-left: 10px;
+        flex-wrap: wrap-reverse;
+        justify-content: center;
+        position: absolute;
+top: 900px;
+    
+    }
+    .card{
+        margin: 20px;
+    }
+    .docname{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    </style>
+
+  <header>
+    <a href="#" class="logo" ><img src="images/medicine.png" alt="nature"></a>
+    <input type="checkbox" id="menu-bar">
+    <label for="menu-bar">Menu</label>
+    <nav class="navbar">
+      <ul>
+          <li><a href="index.html">home</a></li>
+          <li><a href="departments.html">Departments</a></li>
+          <li><a href="Support.html">Support</a>
+              <ul>
+                  <li><a href="#">Contact us</a></li>
+                  <li><a href="#">services+</a>
+                  
+              </li>
+          </ul>
+      </li>
+              <li><a href="Aboutus.html">About us</a></li>
+         
+          <li><a href="Contact us.html">contact us</a></li>
+      </ul>
+  </nav>
+</header> 
+
+<section class="section about" aria-labelledby="about-label">
+    <div class="container">
+      <div class="banner">
+      <figure class="about-banner" data-reveal="right">
+        <img src="/images/about-banner.png" style="margin-top: 150px;" loading="lazy" alt="about banner"
+          class="w-100">
+      </figure>
+    </div>
+
+      <div class="about-content">
+        <h2 class="headline-md" data-reveal="left">Experienced Workers</h2>
+
+        <p class="section-text" data-reveal="left">
+          Aliquam faucibus, odio nec commodo aliquam, neque felis placerat dui, a porta ante lectus dapibus est.
+          Aliquam
+        </p>
+
+        <ul class="tab-list" data-reveal="left">
+
+          <li>
+            <button class="tab-btn active">Vision</button>
+          </li>
+
+          <li>
+            <button class="tab-btn">Mission</button>
+          </li>
+
+          <li>
+            <button class="tab-btn">Strategy</button>
+          </li>
+
+        </ul>
+
+        <p class="tab-text" >
+          Aliquam faucibus, odio nec commodo aliquam, neque felis placerat dui, a porta ante lectus dapibus est
+        </p>
+
+        <div class="wrapper">
+
+          <ul class="about-list">
+
+            <li class="about-item" data-reveal="left">
+              <ion-icon name="checkmark-circle-outline"></ion-icon>
+
+              <span class="span">Sonsectetur adipisicing elit</span>
+            </li>
+
+            <li class="about-item" data-reveal="left">
+              <ion-icon name="checkmark-circle-outline"></ion-icon>
+
+              <span class="span">Exercitation ullamco laboris</span>
+            </li>
+
+            <li class="about-item" data-reveal="left">
+              <ion-icon name="checkmark-circle-outline"></ion-icon>
+
+              <span class="span">Eiusmod tempor incididunt</span>
+            </li>
+
+            <li class="about-item" data-reveal="left">
+              <ion-icon name="checkmark-circle-outline"></ion-icon>
+
+              <span class="span">Aolore magna aliqua</span>
+             
+            </li>
+
+          </ul>
+          <hr>
+
+        </div>
+
+      </div>
+    </div>
+
+  </section>
+  <hr>
+  <div class="docname">
+    
+  <h1>Top Experienced Doctors</h1></div>
+  <div class="Doctors">
+  
+  
+  <div class="card" style="width: 18rem;">
+    <img class="card-img-top" src="images/png-woman-doctor-transparent-woman-doctor-images-11.png" alt="Card image cap">
+    <div class="card-body">
+      <h5 class="card-title">Dr. Roma Sarnaik</h5>
+      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+      <a href="#" class="btn btn-primary">Read more</a>
+    </div>
+  </div>
+  <div class="card" style="width: 18rem;">
+    <img class="card-img-top" src="images/basic-ideas-for-logical-programs-for-doctor-home-loan-6.png" alt="Card image cap">
+    <div class="card-body">
+      <h5 class="card-title">Dr. Chandrashekharan Cham</h5>
+      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+      <a href="#" class="btn btn-primary">Read more</a>
+    </div>
+  </div>
+  <div class="card" style="width: 18rem;">
+    <img class="card-img-top" src="images/doctor-bikowski-skin-care-center-sewickey-pennsylvania-home-35.png" alt="Card image cap">
+    <div class="card-body">
+      <h5 class="card-title">Dr. Prakash Khetan</h5>
+      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+      <a href="#" class="btn btn-primary">Read more</a>
+    </div>
+  </div>
+  <div class="card" style="width: 18rem;">
+    <img class="card-img-top" src="images/doctor-essentia-health-12.png" alt="Card image cap">
+    <div class="card-body">
+      <h5 class="card-title">Dr. Shivnarayan Acharya</h5>
+      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+      <a href="#" class="btn btn-primary">Read more</a>
+    </div>
+  </div>
+  <div class="card" style="width: 18rem;">
+    <img class="card-img-top" src="images/woman-doctor-png-transparent-woman-doctor-images-7.png" alt="Card image cap">
+    <div class="card-body">
+      <h5 class="card-title">Dr. Pooja Padole</h5>
+      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+      <a href="#" class="btn btn-primary">Read more</a>
+    </div>
+  </div>
+  <div class="card" style="width: 18rem;">
+    <img class="card-img-top" src="images/basic-ideas-for-logical-programs-for-doctor-home-loan-6.png" alt="Card image cap">
+    <div class="card-body">
+      <h5 class="card-title">Dr. Samir Baheti</h5>
+      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+      <a href="#" class="btn btn-primary">Read more</a>
+    </div>
+  </div>
+  <div class="card" style="width: 18rem;">
+    <img class="card-img-top" src="images/doc1.png" alt="Card image cap">
+    <div class="card-body">
+      <h5 class="card-title">Dr. Sumeet Mandal</h5>
+      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+      <a href="#" class="btn btn-primary">Read more</a>
+    </div>
+  </div>
+  <div class="card" style="width: 18rem;">
+    <img class="card-img-top" src="images/docmain.png" alt="Card image cap">
+    <div class="card-body">
+      <h5 class="card-title">Dr.Rnjana Barthe</h5>
+      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+      <a href="#" class="btn btn-primary">Read more</a>
+    </div>
+  </div>
+  <hr>
+</div>
+
+</body>
+
+</html>

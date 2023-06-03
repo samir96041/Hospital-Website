@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SamLab</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/1a554b41af.js" crossorigin="anonymous"></script>
+ 
+    
+</head>
+<body>
+    
+
+  <!--  inline css only for Achivements section -->
+  <style>
+    .containersb{
+    width: 100%;
+    height: 100vh;
+    margin-top: 134px;
+}
+
+.containersb h1{
+    text-align: center;
+    padding-top:10%;
+    margin-bottom: 60px;
+    font-weight: 600;
+    position: relative;
+}
+.containersb h1::after{
+    content: "";
+    background-color: #303ef7;
+    width: 100px;
+    height: 5px;
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.row{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    grid-gap: 30px;
+}
+.servicesb{
+    text-align: center;
+    padding: 25px 10px ;
+    border-radius: 5px;
+    font-size:14px;
+    cursor: pointer;
+    background:transparent;
+    transition: transform 0.5s , background 0.5s;
+}
+.servicesb i{
+    font-size:40px;
+    margin-bottom:10px;
+    color: #303ef7;
+}
+.service h2{
+    font-weight: 600;
+    margin-bottom:8px;
+}
+.servicesb:hover{
+    background:#303ef7;
+    color:#fff;
+    transform:scale(1.05);
+}
+.servicesb:hover i{
+    color:#fff;
+}
+  </style> */
+    
+  <header>
+    <a href="#" class="logo" ><img src="images/medicine.png" alt="nature"></a>
+    <input type="checkbox" id="menu-bar">
+    <label for="menu-bar">Menu</label>
+    <nav class="navbar">
+        <ul>
+            <li><a href="index.html">home</a></li>
+            <li><a href="departments.html">Departments</a></li>
+            <li><a href="Support.html">Support</a>
+                <ul>
+                    <li><a href="#">Contact us</a></li>
+                    <li><a href="#">services+</a>
+                    
+                </li>
+            </ul>
+        </li>
+                <li><a href="Aboutus.html">About us</a></li>
+           
+            <li><a href="Contact us.html">contact us</a></li>
+        </ul>
+    </nav>
+</header>
+        <section>
+            <div class="container" style="background-image: url(images/hero-bg.png);">
+              <div class="d1">
+               
+                <img src="images/hero-banner.png" alt="" style="width: 400px;">
+               </div>
+                <h4>Welcome to samlab</h4>
+                <h1 style=" font-size: 70px;">FIND NEAREST <br> DOCTOR</h1>
+                
+                <section class="s1">
+            
+                  <div class="wrapper">
+                    <div class="search_box">
+                        <input type="text" placeholder="what are you looking for?">
+                        <i class="fas fa-search"></i>
+                    </div>
+                  </div>
+          
+                </section>
+        </div>
+ 
+        </section>
+        <hr>
+        <!-- Services -->
+
+      <section class="services">
+        <div class="containers">
+            <div class="box1">
+                <div class="card-icon">
+                    <img src="./images/icon-1.png" 
+                     loading="lazy" alt="icon">
+                  </div>
+  
+                  <h3 class="headline-sm card-title" >
+                    <a href="#" > Psychiatry</a>
+                  </h3>
+  
+                  <p class="card-text" style="">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing
+                  </p>
+            </div>
+            <div class="box2"><div class="card-icon">
+                <img src="/images/icon-2.png" loading="lazy" alt="icon">
+              </div>
+
+              <h3 class="headline-sm card-title">
+                <a href="#">Psychiatry</a>
+              </h3>
+
+              <p class="card-text">
+                Lorem ipsum dolor sit amet, consectetur adipisicing
+              </p></div>
+            <div class="box2"><div class="card-icon">
+                <img src="./images/icon-3.png" loading="lazy" alt="icon">
+              </div>
+
+              <h3 class="headline-sm card-title">
+                <a href="#">Psychiatry</a>
+              </h3>
+
+              <p class="card-text">
+                Lorem ipsum dolor sit amet, consectetur adipisicing
+              </p></div>
+            <div class="box2"><div class="card-icon">
+                <img src="images/icon-4.png" loading="lazy" alt="icon">
+              </div>
+
+              <h3 class="headline-sm card-title">
+                <a href="#">Psychiatry</a>
+              </h3>
+
+              <p class="card-text">
+                Lorem ipsum dolor sit amet, consectetur adipisicing
+              </p></div>  
+        </div>
+      </section>
+      <hr>
+
+
+   <div class="servi2">
+    <h1>Services</h1>
+    <div class="vl"></div>
+    <div class="con">
+    <ul>
+      <div class="vl2"><li>24*7 ACUTE MI INTERVENTIONAL FACILITY </li></div>
+      <div class="vl2"><li>24*7 ACUTE MI INTERVENTIONAL FACILITY </li></div>
+      <div class="vl2"><li>
+        COMPLEX CARDIAC INTERVENTION
+        </li></div>
+      <div class="vl2"></div>
+      <div class="vl2"><li>
+        MINIMAL INVASIVE CARDIAC SURGERY
+        </li></div>
+      <div class="vl2"><li>ADVANCED Critical Care</li></div>
+      
+      <div class="vl2"><li>CARDIAC REHABILITATION </li></div>
+      <div class="vl2"> <li>ACUTE STROKE MANAGEMENT </li></div>
+
+    </ul>
+  </div>
+    <div class="imgserv">
+      <img src="images/about.jpg" alt="">
+    </div>
+   </div>
+
+
+<hr>
+
+
+<div class="visiting">  
+  <h3>Visiting hours</h3>
+  <div class="vb1">
+   <h5>Visiting Hours for Patient Relatives</h5>
+   <p>10:00 pm to 12:00 am <br> For all The Wards</p>
+  </div>
+  <div class="vb2">
+    <h5>Visiting Hours for General</h5>
+    <p>10:00 pm to 09pm:00 pm <br> For all The Wards</p>
+   </div>
+</div>
+
+
+
+<!-- Achivements -->
+
+<div class="containersb">
+  <h1>Our Achivements</h1>
+  <div class="row">
+      <div class="servicesb">
+        <img src="images/doctor.png" style="width: 50px;" alt="">
+          <h2>FTDS</h2>
+          <p>lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
+      </div>
+      <div class="servicesb">
+          <img src="images/hospital.png" style="width: 50px;" alt="">
+          <h2>4 lakh sq ft</h2>
+          <p>lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
+      </div>
+      <div class="servicesb">
+         <img src="images/ventilator.png" style="width: 50px;" alt="">
+          <h2>Over 50+</h2>
+          <p>lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
+      </div>
+      <div class="servicesb">
+        <img src="images/medal.png" style="width: 50px;" alt="">
+          <h2>Maharashtra's 1st</h2>
+          <p>lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
+      </div>
+      
+  
+  </div>
+</div>
+
+<!-- FOOTER -->
+
+<footer class="footer">
+  <div class="container-foot">
+      <div class="rowf">
+          <div class="footer-col">
+              <h4 class="compony"> Services<br><hr></h4>
+              <ul>
+                  <li><a href="#">What we Offer</a></li>
+                  <li><a href="#">our services</a></li>
+                  <li><a href="#">privacy policy</a></li>
+                  <li><a href="#">Conditions</a></li>
+              </ul>
+          </div>
+          <div class="footer-col">
+              <h4>Patients and Visitors<br><hr></h4>
+              <ul>
+                  <li><a href="#">FAQ</a></li>
+                  <li><a href="#">Find A Doctor</a></li>
+                  <li><a href="#">Make an Appointment</a></li>
+                  <li><a href="#">Testimonials</a></li>
+                  <li><a href="#">More</a></li>
+              </ul>
+          </div>
+          <div class="footer-col">
+              <h4>About us <br><hr></h4>
+              <ul>
+                  <li><a href="#">Our Chairperson</a></li>
+                  <li><a href="#">Team list</a></li>
+                  <li><a href="#">Carrier</a></li>
+                  <li><a href="#">Doctors</a></li>
+              </ul>
+          </div>
+          <div class="footer-col">
+              <h4>follow us <br><hr></h4>
+              <div class="social-links">
+                  <a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a>
+                  <a href="#"><i class="fab fa-twitter"></i></a>
+                  <a href="https://www.instagram.com/?hl=en"><i class="fab fa-instagram"></i></a>
+                  <a href="#"><i class="fab fa-linkedin-in"></i></a>
+              </div>
+          </div>
+      </div>
+  </div>
+</footer>
+</body>
+<script>
+  hamburger = document.querySelector(".hamburger");
+  nav = document.querySelector("nav");
+  hamburger.onclick = function() {
+      nav.classList.toggle("active");
+  }
+</script>
+</html>
